@@ -11,7 +11,7 @@ function Country(props) {
 
     useEffect(() => {
         if (dawla) {
-            navigate(`/${newCountryName}`, { state: { dawla } });
+            navigate(`/REST-Countries-React/${newCountryName}`, { state: { dawla } });
         }
     }, [dawla, newCountryName, navigate])
     return (

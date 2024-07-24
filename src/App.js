@@ -10,8 +10,8 @@ function App() {
     <div className="App">
       <Nav />
       <Routes>
-        <Route path='/' element={<CountryList />} />
-        <Route path='/:countName' element={<CountryDetails />} />
+        <Route path='/REST-Countries-React' element={<CountryList />} />
+        <Route path='/REST-Countries-React/:countName' element={<CountryDetails />} />
       </Routes>
     </div>
   );
