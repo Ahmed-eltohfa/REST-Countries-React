@@ -1,0 +1,168 @@
+.countryDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 20px;
+    padding-top: 70px;
+    font-family: "Nunito Sans", sans-serif;
+    /* background-color: var(--back-color); */
+
+
+    .btn {
+        background-color: var(--back-color);
+        color: var(--txt-color);
+        width: 100px;
+        padding: 10px 5px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: capitalize;
+        gap: 5px;
+        box-shadow: 0px 1px 7px 0px #00000085;
+        cursor: pointer;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 25px;
+
+        .image {
+            width: 500px;
+            height: 300px;
+            color: var(--txt-color);
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            color: var(--txt-color);
+
+            .title {
+                font-size: 27px;
+                font-weight: bold;
+            }
+
+            .pecies {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(100px, 1fr));
+                gap: 20px;
+
+                .smallInfo {
+                    font-size: 14px;
+
+                    .diff {
+                        color: var(--txt-color);
+                        opacity: .6;
+                    }
+                }
+            }
+
+            .border {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 40px;
+
+                .txt {
+                    font-size: 14px;
+                }
+
+                .bord-countries {
+                    display: flex;
+                    gap: 15px;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    .bord {
+                        background-color: var(--back-color);
+                        color: var(--txt-color);
+                        padding: 5px 10px;
+                        border-radius: 10px;
+                        text-transform: capitalize;
+                        box-shadow: 0px 1px 7px 0px #00000085;
+                    }
+
+                    .diff {
+                        color: var(--txt-color);
+                        opacity: .6;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 778px) {
+    .countryDetails {
+        padding-top: 100px;
+
+        .content {
+            flex-direction: column;
+            padding: 10px 60px;
+
+            .image {
+                width: 100%;
+                height: 200px;
+            }
+
+            .info {
+                gap: 15px;
+
+                .title {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+
+                .pecies {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    font-size: 14;
+                    color: var(--txt-color);
+                    opacity: .9;
+
+                    .smallInfo {
+                        font-size: 14px;
+
+                        .diff {
+                            color: var(--txt-color);
+                            opacity: .5;
+                        }
+                    }
+                }
+
+                .border {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-top: 20px;
+
+                    .txt {
+                        font-size: 15px;
+                    }
+
+                    .bord-countries {
+
+
+                        .bord {
+                            width: 40px;
+                            padding: 10px;
+                            text-align: center;
+                            gap: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
