@@ -10,7 +10,7 @@ function CountryList() {
     const [finArr, setFinArr] = useState([]);
 
     useEffect(() => {
-        fetch("https://restcountries.com/v3.1/all")
+        fetch("https://restcountries.com/v3.1/independent")
             .then((res) => res.json())
             .then((data) => setFinData(data));
     }, [])
